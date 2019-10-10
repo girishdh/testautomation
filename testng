@@ -11,9 +11,4 @@
             <class name="Oak.TestLogin"/>
         </classes>
     </test>
-    <test>
-        <classes>
-            <class name="Oak.TestLogin"/>
-        </classes>
-    </test>
 </suite>

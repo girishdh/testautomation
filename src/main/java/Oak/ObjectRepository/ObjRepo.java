@@ -11,7 +11,21 @@ public class ObjRepo {
     //public static String topUserName ="//*[contains(@class, 'nav-link dropdown-toggle')]";
     public static String topUserName = "oak-header div.UserName + i";
     public static String logoutBtn = "//*[@class=\"logoutTxt\"]";
-    public static String filePathDataProperty = "C:\\Users\\mehul\\IdeaProjects\\autoProj\\datafile.properties";
+    public static String filePathDataProperty = "C:\\Users\\mehul\\testautomation\\datafile.properties";
+
+    // Customer Side nav menu links
+    public static String customerManagementMenuLink = "//*[@id='customerManagement']";
+    public static String cusotmerLink = "//*[@id='Customer']";
+    public static String userLink ="//*[@id='user']";
+    public static String productMappingLink ="//*[@id='customermapping']";
+    public static String productTypeMapping = "//*[@id='producttypemapping']";
+
+    //Rolemanagement Side nav menu link
+    public static String rolemangementLink = "//*[@id='roleManagement']";
+
+
+
+
 
 
 }

@@ -46,7 +46,10 @@ public class LoginPageClass {
     public void logOutDetails (WebDriver driver) throws InterruptedException{
         driver.findElement(By.cssSelector(ObjRepo.topUserName)).click();
         driver.findElement(By.xpath(ObjRepo.logoutBtn)).click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
+    }
+    public void customerMnagementClick (WebDriver driver) throws  InterruptedException{
+        driver.findElement(By.xpath(ObjRepo.customerManagementMenuLink)).click();
     }
 }
 

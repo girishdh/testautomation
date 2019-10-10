@@ -36,7 +36,19 @@ public class TestLogin {
             e.printStackTrace();
         }
     }
+
     @Test(priority = 1)
+    public static void customerLink()
+    {
+        LoginPageClass lcust = new LoginPageClass();
+        try {
+            lcust.customerMnagementClick(driver);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+    @Test(priority = 2)
     public static void verifyLogout()
     {
         LoginPageClass lplogout = new LoginPageClass();
