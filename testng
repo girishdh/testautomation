@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Login" verbose="1" >
+    <test name="Launch Browser">
+        <classes>
+            <class name="Oak.ObjectRepository.BrowserLaunch"/>
+        </classes>
+    </test>
+    <test name="LoginVerify">
+        <classes>
+            <class name="Oak.TestLogin"/>
+        </classes>
+    </test>
+    <test>
+        <classes>
+            <class name="Oak.TestLogin"/>
+        </classes>
+    </test>
+</suite>
