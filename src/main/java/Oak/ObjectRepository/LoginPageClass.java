@@ -15,12 +15,16 @@ import java.util.function.Function;
 
 public class LoginPageClass {
 
+
+// we need to remove these use of By class
    private static By uName = By.xpath(ObjRepo.userName);
    private static By uPassword = By.xpath(ObjRepo.Password);
    private static By loginButton = By.xpath(ObjRepo.loginBtn);
 
-    public void loginDetails(WebDriver driver) throws InterruptedException {
+    public void loginDetails(WebDriver driver) throws InterruptedException 
 
+
+// separate function should be there for below code to read data from file
         File newFile = new File(ObjRepo.filePathDataProperty);
         FileInputStream fileInput = null;
         try {
@@ -34,6 +38,7 @@ public class LoginPageClass {
         } catch (IOException e) {
             e.printStackTrace();
         }
+//there should be a separate class to use these Webdriver methods instead of directly using them
         driver.findElement(uName).sendKeys(prodDataFile.getProperty("UserName"));
         driver.findElement(uPassword).sendKeys(prodDataFile.getProperty("UPassword"));
         driver.findElement(loginButton).click();
