@@ -4,11 +4,11 @@
     <test name="Launch Browser">
         <classes>
             <class name="Oak.ObjectRepository.BrowserLaunch"/>
-        </classes>
+       <!-- </classes>
     </test>
     <test name="LoginVerify">
-        <classes>
-            <class name="Oak.TestLogin"/>
+        <classes-->
+            <class name="LoginVerifyOak.TestLogin"/>
         </classes>
     </test>
 </suite>
